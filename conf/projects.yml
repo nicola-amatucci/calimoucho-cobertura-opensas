@@ -1,0 +1,27 @@
+# Projects
+
+# Projects
+
+models.Project(play-demo1.0):
+  name:                   play-demo 1.0
+  path:                   checkout/play-demo
+  framework:              /home/sas/devel/play
+  updateCommand:          git pull
+  versionCommand:         git log --format=%h -1
+  versionPattern:         g%version
+  revisionDetailPattern:  http://git/test/browse/%version
+  notifications:
+                          - opensas@gmail.com
+
+# models.Project(test1.0):
+#   name:                   Yabe 1.0
+#   path:                   /Users/guillaume/Desktop/play/1.0/samples-and-tests/yabe
+#   framework:              /Users/guillaume/Desktop/play/1.0
+#   updateCommand:          bzr update 
+#   versionCommand:         bzr revno %path
+#   versionPattern:         1.0r%version
+#   revisionDetailPattern:  http://bazaar.launchpad.net/~play-developers/play/1.0/revision/%version
+#   notifications:
+#                           - guillaume.bort@gmail.com
+
+
